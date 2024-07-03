@@ -1,5 +1,5 @@
 import { NavLink } from 'react-router-dom';
-import loginPic from '../assets/login2.jpg';
+import loginPic from '../assets/Login-cuate.png';
 
 export default function Login() {
     return (
