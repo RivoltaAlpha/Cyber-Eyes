@@ -7,6 +7,7 @@ import Register from './pages/register';
 import Footer from './components/footer';
 import Home from './pages/home';
 import FooterSignUp from './pages/signup';
+import About from './pages/about-us';
 // import AdminDashboard from './pages/admin_dashboard';
 // import CyberSec from './pages/cyberSec';
 // import Error from './pages/error';
@@ -26,6 +27,7 @@ const App: React.FC = () => {
             <Route path="/login" element={<Login />} />
              <Route path="/register" element={<Register />} /> 
             <Route path="/signup" element={<FooterSignUp />} />
+            <Route path="/about-us" element={<About />} />
             {/* <Route path="/admin-dashboard" element={<AdminDashboard />} />
             <Route path="/cyber-security" element={<CyberSec />} />
             <Route path="/materials" element={<Materials />} />
