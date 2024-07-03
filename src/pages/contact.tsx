@@ -100,7 +100,7 @@ export default function Contact() {
                         <img
                             alt="Contact us"
                             className="hidden max-h-full w-full rounded-lg object-cover lg:block"
-                            src="https://images.unsplash.com/photo-1615840287214-7ff58936c4cf?ixlib=rb-4.0.3&auto=format&fit=crop&w=687&h=800&q=80"
+                            src="./src/assets/contact.png"
                         />
                     </div>
                 </div>

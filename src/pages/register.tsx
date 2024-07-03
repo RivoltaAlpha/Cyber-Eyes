@@ -1,14 +1,14 @@
 import { NavLink } from 'react-router-dom';
-import loginPic from '../assets/Innovation-amico.png';
+import loginPic from '../assets/Mobile login-pana.png';
 
 export default function Register() {
     return (
         <div className="min-h-screen bg-base-200 flex items-center justify-center py-12 px-4 sm:px-6 lg:px-8">
-                <div className="lg:w-[600px] w-full">
+            <div className="flex flex-col lg:flex-row items-center max-w-4xl w-full bg-white p-10 space-y-8 lg:space-y-0 lg:space-x-8">
+                <div className="lg:w-3/4 lg:mr-11 w-full">
                     <img src={loginPic} alt="Register" className="w-full h-auto object-cover" />
                 </div>
-            <div className="flex flex-col lg:flex-row items-center max-w-4xl w-full bg-white p-10 space-y-8 lg:space-y-0 ">
-                <div className=" ml-[100px] lg:w-1/2 w-full space-y-8">
+                <div className="lg:w-1/2 w-full space-y-8">
                     <div>
                         <h2 className="mt-6 text-center text-3xl font-extrabold text-gray-900">
                             Create your account

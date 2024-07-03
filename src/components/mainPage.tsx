@@ -26,36 +26,36 @@ const ProgramsSection: React.FC = () => {
         <p className="text-xl mb-12">
           Cyber Eyes programs are designed to empower young people with the skills and knowledge necessary to excel in Tech careers and realize their full potential.
         </p>
-        <div className="grid md:grid-cols-2 gap-8">
-          <div className="program-card">
+        <div className="grid md:grid-cols-1 gap-8">
+          <div className="program-card1">
             <ProgramCard
-              title="Ethical Hacking"
+              title="Networking"
               description="Empowering the next generation of innovators through hands-on knowledge and experiences."
-              imageUrl="/path-to-image1.jpg"
+              imageUrl="./src/assets/Server-bro.png"
               buttonText="Explore Program"
             />
           </div>
-          <div className="program-card">
+          <div className="program-card2">
             <ProgramCard
-              title="Programs"
-              description="Connecting aspiring STEM professionals with industry leaders for guidance and support."
-              imageUrl="/path-to-image2.jpg"
+              title="Cyber Security"
+              description=" Providing a safe and secure technological environment for all members of the community."
+              imageUrl="./src/assets/cyber.jpg"
               buttonText="Join Us"
             />
           </div>
-          <div className="program-card">
+          <div className="program-card3">
             <ProgramCard
-              title="Ethical Hacking"
-              description="Empowering the next generation of innovators through hands-on knowledge and experiences."
-              imageUrl="/path-to-image1.jpg"
+              title="Software Engineering"
+              description="Enhancing technical skills and knowledge for job readiness."
+              imageUrl="./src/assets/software.jpg"
               buttonText="Explore Program"
             />
           </div>
-          <div className="program-card">
+          <div className="program-card4">
             <ProgramCard
-              title="Programs"
-              description="Connecting aspiring STEM professionals with industry leaders for guidance and support."
-              imageUrl="/path-to-image2.jpg"
+              title="Learning and Development"
+              description="Aquire skills through our learning and development materials."
+              imageUrl="./src/assets/learn.png"
               buttonText="Join Us"
             />
           </div>
