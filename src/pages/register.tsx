@@ -1,11 +1,14 @@
 import { NavLink } from 'react-router-dom';
-import loginPic from '../assets/Server-bro1.png';
+import loginPic from '../assets/Innovation-amico.png';
 
 export default function Register() {
     return (
         <div className="min-h-screen bg-base-200 flex items-center justify-center py-12 px-4 sm:px-6 lg:px-8">
-            <div className="flex flex-col lg:flex-row items-center max-w-4xl w-full bg-white p-10 rounded-xl shadow-2xl space-y-8 lg:space-y-0 lg:space-x-8">
-                <div className="lg:w-1/2 w-full space-y-8">
+                <div className="lg:w-[600px] w-full">
+                    <img src={loginPic} alt="Register" className="w-full h-auto object-cover" />
+                </div>
+            <div className="flex flex-col lg:flex-row items-center max-w-4xl w-full bg-white p-10 space-y-8 lg:space-y-0 ">
+                <div className=" ml-[100px] lg:w-1/2 w-full space-y-8">
                     <div>
                         <h2 className="mt-6 text-center text-3xl font-extrabold text-gray-900">
                             Create your account
@@ -65,7 +68,7 @@ export default function Register() {
                         <div>
                             <button
                                 type="submit"
-                                className="group relative w-full flex justify-center py-2 px-4 border border-transparent text-sm font-medium rounded-md text-white bg-yellow-500 hover:bg-blue-900 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
+                                className="group relative w-full flex justify-center py-2 px-4 border border-transparent text-sm font-medium rounded-md text-white bg-black hover:bg-blue-900 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
                             >
                                 Register
                             </button>
@@ -79,9 +82,6 @@ export default function Register() {
                             </NavLink>
                         </p>
                     </div>
-                </div>
-                <div className="lg:w-1/2 w-full">
-                    <img src={loginPic} alt="Register" className="w-full h-auto object-cover" />
                 </div>
             </div>
         </div>
