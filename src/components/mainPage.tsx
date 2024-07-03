@@ -59,22 +59,6 @@ const ProgramsSection: React.FC = () => {
               buttonText="Join Us"
             />
           </div>
-          <div className="program-card">
-            <ProgramCard
-              title="Ethical Hacking"
-              description="Empowering the next generation of innovators through hands-on knowledge and experiences."
-              imageUrl="/path-to-image1.jpg"
-              buttonText="Explore Program"
-            />
-          </div>
-          <div className="program-card">
-            <ProgramCard
-              title="Programs"
-              description="Connecting aspiring STEM professionals with industry leaders for guidance and support."
-              imageUrl="/path-to-image2.jpg"
-              buttonText="Join Us"
-            />
-          </div>
         </div>
       </div>
     </section>

@@ -1,5 +1,6 @@
 import React from 'react';
 import { FaFacebookF, FaLinkedinIn, FaTwitter, FaInstagram } from 'react-icons/fa';
+import { NavLink } from 'react-router-dom';
 
 const Footer: React.FC = () => {
   return (
@@ -23,9 +24,9 @@ const Footer: React.FC = () => {
                 placeholder="Enter your email here *"
                 className="p-2 mb-2 border border-gray-300 rounded"
               />
-              <button className="bg-beige text-black p-2 rounded hover:bg-beige-dark transition duration-300">
+              <NavLink to="/signup" className="text-sm hover:underline"><button className="bg-beige text-black p-2 rounded hover:bg-beige-dark transition duration-300">
                 Sign Up!
-              </button>
+              </button></NavLink>
             </form>
           </div>
 
