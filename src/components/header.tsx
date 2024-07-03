@@ -43,9 +43,12 @@ export const Header: React.FC = () => {
         <div
           className={`w-full lg:flex lg:items-center lg:w-auto ${isOpen ? 'block' : 'hidden'}`}
         >
-          <div className="flex flex-col lg:flex-row lg:items-center lg:space-x-4">
+          <div className="flex flex-col lg:flex-row lg:items-center lg:space-x-2">
             <NavLink to="/" className="text-yellow-500 hover:text-white px-3 py-2">
               Home
+            </NavLink>
+            <NavLink to="/about-us" className="text-yellow-500 hover:text-white px-3 py-2">
+              About Us
             </NavLink>
             <NavLink to="CTF Platform" className="text-yellow-500 hover:text-white px-3 py-2">
               CTF Platform

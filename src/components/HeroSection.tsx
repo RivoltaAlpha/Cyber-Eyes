@@ -50,26 +50,26 @@ const HeroSection: React.FC = () => {
       slidesToScroll: 1,
       autoplay: true,
       arrows: true,
-    //   customPaging: (i: number) => (
-    //     <div className="w-3 h-3 bg-black bg-opacity-500 rounded-full mx-1"></div>
-    //   ),
+      // customPaging: (i: number) => (
+      //   <div className="w-3 h-3 bg-black bg-opacity-500 rounded-full mx-1"></div>
+      // ),
     };
 
   return (
     <Slider {...settings}>
       <Slide
         title="Who we are"
-        description="We are a technical computer security collective that brings together the individual talents of the best and brightest security professionals in the region, through live presentations, engaging security discussions and..."
+        description="Cyber eyes networks its a startup founded by young innovators looking to help in bridging students in cyber security majorly and other tech stacks looking forward to skilling together."
         imageUrl='./src/assets/image1.jpg'
       />
       <Slide
-        title="Who we are"
-        description="We are a technical computer security collective that brings together the individual talents of the best and brightest security professionals in the region, through live presentations, engaging security discussions and..."
+        title="Vision"
+        description=" To be the premier technical computer security collective in the region."
         imageUrl='./src/assets/image2.jpg'
       />
             <Slide
-        title="Who we are"
-        description="We are a technical computer security collective that brings together the individual talents of the best and brightest security professionals in the region, through live presentations, engaging security discussions and..."
+        title="Mission"
+        description="With core values deeply rooted in cybersecurity excellence, coding innovation, and community empowerment, Cyber Eyes Networks emerged as a technology hub that brings a unique blend of expertise, creativity, and a steadfast commitment to ethical practices. "
         imageUrl='./src/assets/image1.jpg'
       />
     </Slider>
