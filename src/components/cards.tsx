@@ -17,7 +17,7 @@ const ProgramCard: React.FC<ProgramCardProps> = ({ title, description, imageUrl,
         <div className="p-8">
           <h2 className="text-2xl font-bold mb-2">{title}</h2>
           <p className="text-gray-600 mb-4">{description}</p>
-          <button className="bg-green-700 text-white px-4 py-2 rounded hover:bg-green-800 transition duration-300">
+          <button className="bg-yellow-500 text-white px-4 py-2 rounded hover:bg-green-800 transition duration-300">
             {buttonText}
           </button>
         </div>
