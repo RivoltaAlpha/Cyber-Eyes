@@ -8,11 +8,12 @@ import Footer from './components/footer';
 import Home from './pages/home';
 import FooterSignUp from './pages/signup';
 import About from './pages/about-us';
+import CybersecurityPage from './pages/cyberSec';
+import SoftwareEng from './pages/software-eng';
+import ArticlePage from './pages/articlePage';
 // import AdminDashboard from './pages/admin_dashboard';
-// import CyberSec from './pages/cyberSec';
 // import Error from './pages/error';
 // import Materials from './pages/materials';
-// import SoftwareEng from './pages/software-eng';
 // import UserDashboard from './pages/user_Dashboard';
 
 const App: React.FC = () => {
@@ -28,10 +29,11 @@ const App: React.FC = () => {
              <Route path="/register" element={<Register />} /> 
             <Route path="/signup" element={<FooterSignUp />} />
             <Route path="/about-us" element={<About />} />
-            {/* <Route path="/admin-dashboard" element={<AdminDashboard />} />
-            <Route path="/cyber-security" element={<CyberSec />} />
-            <Route path="/materials" element={<Materials />} />
+            <Route path="/cyber-security" element={<CybersecurityPage />} />
             <Route path="/software-engineering" element={<SoftwareEng />} />
+            <Route path="/articles" element={<ArticlePage />} />
+            {/* <Route path="/admin-dashboard" element={<AdminDashboard />} />
+            <Route path="/materials" element={<Materials />} />
             <Route path="/user-dashboard" element={<UserDashboard />} />
             <Route path="*" element={<Error />} />  */}
           </Routes>
