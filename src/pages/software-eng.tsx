@@ -1,4 +1,4 @@
-
+import { NavLink } from "react-router-dom";
 const SoftwareEngPage = () => {
     return (
         <div className="min-h-screen bg-gray-900 text-white">
@@ -31,6 +31,9 @@ const SoftwareEngPage = () => {
                     <h2 className="text-xl font-semibold mb-2">Article Title</h2>
                     <p className="text-gray-300">Brief description of the article...</p>
                   </div>
+                  <NavLink to="/articles">
+                  <button type="button" className="w-[100px] py-2 rounded ml-[150px] mb-4 bg-red-500 btn btn-outline btn-primary" > Read more 
+                  </button></NavLink>
                 </div>
               ))}
             </div>
@@ -43,7 +46,7 @@ const SoftwareEngPage = () => {
                   <div key={index} className="bg-indigo-700 rounded-lg overflow-hidden">
                     <img 
                       src="./src/assets/software.png" 
-                      alt="Robot" 
+                      alt="Software Engineering Image" 
                       className="w-full h-32 object-cover"
                     />
                     <div className="p-4">
