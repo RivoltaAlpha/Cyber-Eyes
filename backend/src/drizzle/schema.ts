@@ -74,8 +74,19 @@ export const readingMaterials = pgTable('reading_materials', {
   id:serial('id').primaryKey(),
   title: varchar('title', {length: 255}).notNull(),
   author: varchar('author', {length: 255}).notNull(),
+  category: varchar('type', {length: 50}).notNull(),
+  description: text('description'),
+  url: varchar('url', {length: 255}).notNull(),
+  createdAt: timestamp('created_at').defaultNow(),
+  updatedAt: timestamp('updated_at').defaultNow()
+});
+
+export const writeups = pgTable('writeups', {
+  id:serial('id').primaryKey(),
+  title: varchar('title', {length: 255}).notNull(),
+  author: varchar('author', {length: 255}).notNull(),
   type: varchar('type', {length: 50}).notNull(),
-  content: text('content'),
+  content: varchar('description', {length: 255}).notNull(),
   url: varchar('url', {length: 255}).notNull(),
   createdAt: timestamp('created_at').defaultNow(),
   updatedAt: timestamp('updated_at').defaultNow()
