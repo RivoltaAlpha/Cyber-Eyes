@@ -12,7 +12,7 @@ export const Header: React.FC = () => {
     <header className="bg-black text-yellow-500">
       <nav className="container mx-auto px-6 py-3 flex flex-wrap justify-between items-center">
         <div className="text-xl font-bold">
-          Cyber-Eyes Network
+          Cyber-Eyes Networks
         </div>
         <div className="block lg:hidden">
           <button
@@ -85,15 +85,3 @@ export const Header: React.FC = () => {
 
 export default Header;
 
-
-// import { Link } from 'react-router-dom';
-
-// // In a component
-// <Link to="/contact" className="...">Contact Us</Link>
-
-// // Or using useNavigate hook
-// import { useNavigate } from 'react-router-dom';
-
-// const navigate = useNavigate();
-// // Later in your code
-// navigate('/contact');

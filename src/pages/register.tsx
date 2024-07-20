@@ -1,6 +1,6 @@
 import { NavLink } from 'react-router-dom';
 // import RegPic from '../assets/reg.png';
-import RegPic from '../assets/Learning-cuate.png';
+import RegPic from '/images/Learning-cuate.png';
 
 export default function Register() {
     return (

@@ -1,33 +1,95 @@
-const About = () => {
-    return (
-        <div className="min-h-screen bg-gray-100 py-12 px-4 sm:px-6 lg:px-8">
-            <div className="max-w-5xl mx-auto bg-white p-10 rounded-lg shadow-lg">
-                <h1 className="text-5xl font-extrabold text-center text-gray-900 mb-8">About Us</h1>
-                <p className="text-lg text-gray-700 mb-8 leading-relaxed">
-                    In the vibrant landscape of technological innovation, the journey to the formation of Cyber Eyes Networks in 2023 was a tale spun by two aspiring minds, Brian Karanja and Brian Ndegwa, hailing from diverse universities - Kirinyaga University and Dedan Kimathi University of Technology. United by a shared vision, their alliance birthed a dynamic and forward-thinking organization that stands as a beacon of change in Africa's technology arena. With core values deeply rooted in cybersecurity excellence, coding innovation, and community empowerment, Cyber Eyes Networks emerged as a technology hub that brings a unique blend of expertise, creativity, and a steadfast commitment to ethical practices. In the eloquent words of Steve Jobs, "Innovation distinguishes between a leader and a follower," and indeed, Cyber Eyes Networks is on a relentless pursuit of innovation, poised to revolutionize the technological landscape across the continent.
-                </p>
-                
-                <h2 className="text-4xl font-bold text-gray-900 mb-4 border-b-2 border-yellow-500 inline-block">Mission</h2>
-                <p className="text-lg text-gray-700 mb-8 leading-relaxed">
-                    To be the premier technical computer security collective in the region.
-                </p>
-                
-                <h2 className="text-4xl font-bold text-gray-900 mb-4 border-b-2 border-yellow-500 inline-block">Vision</h2>
-                <p className="text-lg text-gray-700 mb-8 leading-relaxed">
-                    Cyber Eyes Networks aims to bridge the gap between students in cybersecurity and other tech fields, fostering an environment of skill development and collaboration.
-                </p>
-                
-                <h2 className="text-4xl font-bold text-gray-900 mb-4 border-b-2 border-yellow-500 inline-block">Goals</h2>
-                <ul className="list-disc list-inside text-lg text-gray-700 space-y-2 pl-5 leading-relaxed">
-                    <li>Promote cybersecurity excellence through innovative practices and solutions.</li>
-                    <li>Empower the tech community by providing platforms for learning and collaboration.</li>
-                    <li>Drive coding innovation to address real-world challenges in technology.</li>
-                    <li>Foster ethical practices and integrity in all our endeavors.</li>
-                    <li>Expand our reach across the continent to make a significant impact in the tech landscape.</li>
-                </ul>
-            </div>
+import React from 'react';
+
+// Import your images
+import provenImpactImage from '/images/image2.jpg';
+import awardWinningTeamImage from '/images/award-winning-team.jpg';
+import innovativeCurriculumImage from '/images/hacking.png';
+import mentorshipImage from '/images/software.png';
+import aboutBackgroundImage from '/images/image1.jpg';
+import visionImage from '/images/image3.jpg';
+import missionImage from '/images/image2.jpg';
+
+const About: React.FC = () => {
+  return (
+    <div className="container mx-auto px-4">
+    {/* About Us Section with background image */}
+    <div 
+      className="bg-cover bg-center h-96 flex items-center justify-center mb-12"
+      style={{ backgroundImage: `url(${aboutBackgroundImage})` }}
+    >
+      <h1 className="text-4xl font-bold text-white">About Us</h1>
+    </div>
+    <div>
+        <p>Cyber Eyes Networks, a dynamic tech hub founded in 2023 by Brian Karanja and Brian Ndegwa, is passionate about empowering the Mount Kenya region. 
+            Our core values lie in cybersecurity excellence, fostering coding innovation, and building a diverse and inclusive tech community. 
+            We believe technology should be a force for good, and that's why we offer cutting-edge cybersecurity solutions to protect businesses and individuals. 
+            These two inspiring minds hail from diverse academic backgrounds, with Brian Karanja bringing his expertise from Kirinyaga University and Brian Ndegwa contributing his knowledge gained from Dedan Kimathi University of Technology. 
+            Their combined skillset and shared vision fuel Cyber Eyes Networks' mission to create a safer digital landscape. As technologist Alan Kay said, "The best way to predict the future is to invent it." We share this vision, and that's why we're constantly pushing boundaries and exploring new possibilities. 
+            We believe in shaping the future of technology in Africa, not just reacting to it.</p>
+      </div>
+
+    {/* Vision Section */}
+    <div className="flex flex-col md:flex-row items-center my-12">
+
+      <div className="md:w-1/2">
+        <img src={visionImage} alt="Vision" className="w-full h-auto" />
+      </div>
+      <div className="md:w-1/2 p-8">
+        <h2 className="text-2xl font-bold mb-4">Our Vision</h2>
+        <p>To empower the Mount Kenya region by becoming the leading force in technological advancement and security. We envision a future where 
+            everyone has a secure digital environment and technology unlocks the full potential of individuals and communities.
+             We are committed to fostering an inclusive and representative tech industry, ensuring everyone has a seat at the table. 
+             Inspired by Steve Jobs' belief that "Innovation distinguishes between a leader and a follower," we relentlessly pursue breakthroughs to revolutionize the African tech scene.</p>
+      </div>
+    </div>
+
+    {/* Mission Section */}
+    <div className="flex flex-col md:flex-row-reverse items-center my-12">
+      <div className="md:w-1/2">
+        <img src={missionImage} alt="Mission" className="w-full h-auto" />
+      </div>
+      <div className="md:w-1/2 p-8">
+        <h2 className="text-2xl font-bold mb-4">Our Mission</h2>
+        <p>Our mission is to create a safer digital landscape in kenya . We achieve this by providing innovative cybersecurity solutions, IT consultancy services, and educational programs.
+             We offer hackathons and bootcamps to spark creativity and collaboration, alongside comprehensive training programs to equip individuals with the skills they need to thrive. 
+            A core aspect of our mission is championing women and youth in tech, ensuring a future where everyone has the opportunity to excel in this ever-growing field.</p>
+      </div>
+    </div>
+    <div className="my-12">
+      <h2 className="text-3xl font-bold text-center mb-8">Why Cyber Eyes Networks?</h2>
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+        <div className="flex">
+          <img src={provenImpactImage} alt="Proven Impact" className="w-1/2 object-cover" />
+          <div className="w-1/2 p-4 bg-gray-100">
+            <h3 className="text-xl font-bold mb-2">Proven Impact</h3>
+            <p className="text-sm">Our training programs drive measurable advancements in cybersecurity and software development skills. From securing networks to developing cutting-edge applications, we deliver results that matter. Each course is backed by rigorous data analysis and real success stories from our graduates.</p>
+          </div>
         </div>
-    );
+        <div className="flex">
+          <img src={awardWinningTeamImage} alt="Award Winning Team" className="w-1/2 object-cover" />
+          <div className="w-1/2 p-4 bg-gray-100">
+            <h3 className="text-xl font-bold mb-2">Award Winning Team</h3>
+            <p className="text-sm">Our founders are recognized leaders in cybersecurity and software development, earning prestigious awards for their groundbreaking contributions. Their vision and expertise drive our mission to deliver top-tier training programs.</p>
+          </div>
+        </div>
+        <div className="flex">
+          <img src={innovativeCurriculumImage} alt="Innovative Curriculum" className="w-1/2 object-cover" />
+          <div className="w-1/2 p-4 bg-gray-100">
+            <h3 className="text-xl font-bold mb-2">Innovative Curriculum</h3>
+            <p className="text-sm">Our innovative curriculum goes beyond traditional learning methods, integrating cutting-edge technology and real-world applications to foster critical thinking and creativity. Designed by industry experts, our programs offer personalized learning paths, hands-on projects, and collaborative experiences.</p>
+          </div>
+        </div>
+        <div className="flex">
+          <img src={mentorshipImage} alt="Mentorship and Community Support" className="w-1/2 object-cover" />
+          <div className="w-1/2 p-4 bg-gray-100">
+            <h3 className="text-xl font-bold mb-2">Mentorship and Community Support</h3>
+            <p className="text-sm">Our mentorship and community support programs are dedicated to fostering the growth of cybersecurity and software engineering students on campuses. With guidance from industry experts and a collaborative community, students gain the skills and confidence needed to excel in the tech world.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  );
 };
 
 export default About;

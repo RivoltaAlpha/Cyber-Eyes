@@ -6,7 +6,7 @@ const SoftwareEngPage = () => {
           {/* Hero Banner */}
           <div className="relative h-96 overflow-hidden">
             <img 
-              src="./src/assets/software.jpg" 
+              src="/images/software.jpg" 
               alt="Software Engineering Banner" 
               className="absolute inset-0 w-full h-full object-cover"
             />
@@ -23,7 +23,7 @@ const SoftwareEngPage = () => {
               {[...Array(9)].map((_, index) => (
                 <div key={index} className="bg-blue-900 rounded-lg overflow-hidden">
                   <img 
-                      src="./src/assets/software.png" 
+                      src="/images/software.png" 
                       alt="Robot" 
                     className="w-full h-48 object-cover"
                   />
@@ -45,7 +45,7 @@ const SoftwareEngPage = () => {
                 {[...Array(3)].map((_, index) => (
                   <div key={index} className="bg-indigo-700 rounded-lg overflow-hidden">
                     <img 
-                      src="./src/assets/software.png" 
+                      src="/images/software.png" 
                       alt="Software Engineering Image" 
                       className="w-full h-32 object-cover"
                     />

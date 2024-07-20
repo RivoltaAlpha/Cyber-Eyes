@@ -31,7 +31,7 @@ const ProgramsSection: React.FC = () => {
             <ProgramCard
               title="Networking"
               description="Empowering the next generation of innovators through hands-on knowledge and experiences."
-              imageUrl="./src/assets/Server-bro.png"
+              imageUrl="/images/Server-bro.png"
               buttonText="Explore Program"
             />
           </div>
@@ -39,7 +39,7 @@ const ProgramsSection: React.FC = () => {
             <ProgramCard
               title="Cyber Security"
               description=" Providing a safe and secure technological environment for all members of the community."
-              imageUrl="./src/assets/cyber.jpg"
+              imageUrl="/images/cyber.jpg"
               buttonText="Join Us"
             />
           </div>
@@ -47,7 +47,7 @@ const ProgramsSection: React.FC = () => {
             <ProgramCard
               title="Software Engineering"
               description="Enhancing technical skills and knowledge for job readiness."
-              imageUrl="./src/assets/software.jpg"
+              imageUrl="/images/software.jpg"
               buttonText="Explore Program"
             />
           </div>
@@ -55,7 +55,7 @@ const ProgramsSection: React.FC = () => {
             <ProgramCard
               title="Learning and Development"
               description="Aquire skills through our learning and development materials."
-              imageUrl="./src/assets/learn.png"
+              imageUrl="/images/learn.png"
               buttonText="Join Us"
             />
           </div>

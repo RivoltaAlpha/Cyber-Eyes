@@ -6,7 +6,7 @@ const CybersecurityPage = () => {
           {/* Hero Banner */}
           <div className="relative h-96 overflow-hidden">
             <img 
-              src="./src/assets/hacking.png" 
+              src="/images/hacking.png" 
               alt="Ethical Hacking Banner" 
               className="absolute inset-0 w-full h-full object-cover"
             />
@@ -23,7 +23,7 @@ const CybersecurityPage = () => {
               {[...Array(9)].map((_, index) => (
                 <div key={index} className="bg-indigo-700 rounded-lg overflow-hidden">
                   <img 
-                    src="./src/assets/hacking.png" 
+                    src="/images/hacking.png" 
                     alt="Robot" 
                     className="w-full h-48 object-cover"
                   />
@@ -45,7 +45,7 @@ const CybersecurityPage = () => {
                 {[...Array(3)].map((_, index) => (
                   <div key={index} className="bg-indigo-700 rounded-lg overflow-hidden">
                     <img 
-                      src="./src/assets/image1.jpg" 
+                      src="/images/image1.jpg" 
                       alt="Robot" 
                       className="w-full h-32 object-cover"
                     />

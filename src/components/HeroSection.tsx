@@ -28,7 +28,7 @@ const Slide: React.FC<SlideProps> = ({ title, description, imageUrl }) => (
       </div>
       
       {/* Navigation Arrows */}
-      <div className="absolute inset-y-0 left-0 flex items-center">
+      {/* <div className="absolute inset-y-0 left-0 flex items-center">
         <button className="bg-yellow-500 text-white p-4 rounded-r">
           {'<'}
         </button>
@@ -37,7 +37,7 @@ const Slide: React.FC<SlideProps> = ({ title, description, imageUrl }) => (
         <button className="bg-yellow-500 text-white p-4 rounded-l">
           {'>'}
         </button>
-      </div>
+      </div> */}
     </div>
   );
 
@@ -50,9 +50,6 @@ const HeroSection: React.FC = () => {
       slidesToScroll: 1,
       autoplay: true,
       arrows: true,
-      // customPaging: (i: number) => (
-      //   <div className="w-3 h-3 bg-black bg-opacity-500 rounded-full mx-1"></div>
-      // ),
     };
 
   return (
@@ -60,17 +57,17 @@ const HeroSection: React.FC = () => {
       <Slide
         title="Who we are"
         description="Cyber eyes networks its a startup founded by young innovators looking to help in bridging students in cyber security majorly and other tech stacks looking forward to skilling together."
-        imageUrl='./src/assets/image1.jpg'
+        imageUrl='/images/image1.jpg'
       />
       <Slide
         title="Vision"
         description=" To be the premier technical computer security collective in the region."
-        imageUrl='./src/assets/image2.jpg'
+        imageUrl='/images/image2.jpg'
       />
             <Slide
         title="Mission"
         description="With core values deeply rooted in cybersecurity excellence, coding innovation, and community empowerment, Cyber Eyes Networks emerged as a technology hub that brings a unique blend of expertise, creativity, and a steadfast commitment to ethical practices. "
-        imageUrl='./src/assets/image1.jpg'
+        imageUrl='/images/hacking.png'
       />
     </Slider>
   );
