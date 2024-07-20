@@ -12,6 +12,7 @@ import CybersecurityPage from './pages/cyberSec';
 import SoftwareEng from './pages/software-eng';
 import ArticlePage from './pages/articlePage';
 import CTFPlatform from './pages/ctfPage';
+import NewsHub from './pages/newsHub';
 // import AdminDashboard from './pages/admin_dashboard';
 // import Error from './pages/error';
 // import Materials from './pages/materials';
@@ -34,6 +35,7 @@ const App: React.FC = () => {
             <Route path="/cyber-security" element={<CybersecurityPage />} />
             <Route path="/software-engineering" element={<SoftwareEng />} />
             <Route path="/articles" element={<ArticlePage />} />
+            <Route path="/newsHub" element={<NewsHub />} />
             {/* <Route path="/admin-dashboard" element={<AdminDashboard />} />
             <Route path="/materials" element={<Materials />} />
             <Route path="/user-dashboard" element={<UserDashboard />} />

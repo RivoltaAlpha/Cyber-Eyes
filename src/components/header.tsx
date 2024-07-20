@@ -59,7 +59,7 @@ export const Header: React.FC = () => {
             <NavLink to="/software-engineering" className="text-yellow-500 hover:text-white px-3 py-2">
               Software Engineering
             </NavLink>
-            <NavLink to="/News Hub" className="text-yellow-500 hover:text-white px-3 py-2">
+            <NavLink to="/newsHub" className="text-yellow-500 hover:text-white px-3 py-2">
               News Hub
             </NavLink>
             <NavLink to="/materials" className="text-yellow-500 hover:text-white px-3 py-2">
