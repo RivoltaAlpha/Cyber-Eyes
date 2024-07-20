@@ -4,7 +4,7 @@ const CybersecurityPage = () => {
         <div className="min-h-screen bg-gray-900 text-white">
           
           {/* Hero Banner */}
-          <div className="relative h-96 overflow-hidden">
+          <div className="relative h-[500px] overflow-hidden">
             <img 
               src="/images/hacking.png" 
               alt="Ethical Hacking Banner" 
@@ -20,7 +20,7 @@ const CybersecurityPage = () => {
           <main className="max-w-7xl mx-auto py-8 px-4 sm:px-6 lg:px-8">
             {/* Article grid */}
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
-              {[...Array(9)].map((_, index) => (
+              {[...Array(6)].map((_, index) => (
                 <div key={index} className="bg-indigo-700 rounded-lg overflow-hidden">
                   <img 
                     src="/images/hacking.png" 
@@ -39,24 +39,7 @@ const CybersecurityPage = () => {
             </div>
     
             {/* News & Events section */}
-            <div className="bg-gray-800 rounded-lg p-6">
-              <h2 className="text-2xl font-bold mb-4">News & Events</h2>
-              <div className="grid grid-cols-1 grid-rows-3 gap-8">
-                {[...Array(3)].map((_, index) => (
-                  <div key={index} className="bg-indigo-700 rounded-lg overflow-hidden">
-                    <img 
-                      src="/images/image1.jpg" 
-                      alt="Robot" 
-                      className="w-full h-32 object-cover"
-                    />
-                    <div className="p-4">
-                      <h3 className="text-lg font-semibold mb-1">News Title</h3>
-                      <p className="text-gray-300 text-sm">Brief news description...</p>
-                    </div>
-                  </div>
-                ))}
-              </div>
-            </div>
+            {/*  */}
           </main>
         </div>
       );

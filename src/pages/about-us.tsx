@@ -5,7 +5,7 @@ import provenImpactImage from '/images/image2.jpg';
 import awardWinningTeamImage from '/images/award-winning-team.jpg';
 import innovativeCurriculumImage from '/images/innovation.png';
 import mentorshipImage from '/images/software.jpg';
-import aboutBackgroundImage from '/images/background.png';
+import aboutBackgroundImage from '/images/background2.png';
 import visionImage from '/images/image3.jpg';
 import missionImage from '/images/image2.jpg';
 import teamMember1Image from '/images/Learning-cuate.png';
@@ -16,15 +16,20 @@ import { FaLinkedin } from 'react-icons/fa';
 
 const About: React.FC = () => {
   return (
-    <div className="container mx-auto px-4">
+    <div className="min-h-screen ">
     <div 
-      className="bg-cover bg-no-repeat mt-10 bg-center h-96 flex items-center justify-center mb-24"
-      style={{ backgroundImage: `url(${aboutBackgroundImage})` }}
+      className="relative h-[600px] flex items-center justify-center mb-24"
+      style={{ backgroundImage: `url(${aboutBackgroundImage})`,
+      backgroundSize: 'cover',
+      backgroundPosition: 'center', 
+      backgroundColor: 'rgba(0, 0, 0, 0.5)',
+      backgroundBlendMode: 'multiply', 
+    }}
     >
-      <h1 className="text-4xl font-bold text-white">About Us</h1>
+      <h1 className="text-4xl font-bold text-white ">About Us</h1>
     </div>
     <div>
-        <p className='text-xl mb-28'>Cyber Eyes Networks, a dynamic tech hub founded in 2023 by Brian Karanja and Brian Ndegwa, is passionate about empowering the Mount Kenya region. 
+        <p className='text-xl container mx-auto mb-28'>Cyber Eyes Networks, a dynamic tech hub founded in 2023 by Brian Karanja and Brian Ndegwa, is passionate about empowering the Mount Kenya region. 
             Our core values lie in cybersecurity excellence, fostering coding innovation, and building a diverse and inclusive tech community. 
             We believe technology should be a force for good, and that's why we offer cutting-edge cybersecurity solutions to protect businesses and individuals. 
             These two inspiring minds hail from diverse academic backgrounds, with Brian Karanja bringing his expertise from Kirinyaga University and Brian Ndegwa contributing his knowledge gained from Dedan Kimathi University of Technology. 
@@ -33,7 +38,7 @@ const About: React.FC = () => {
       </div>
 
     {/* Vision Section */}
-    <div className="flex flex-col md:flex-row items-center my-12">
+    <div className="flex flex-col container mx-auto md:flex-row items-center my-12">
 
       <div className="md:w-1/2">
         <img src={visionImage} alt="Vision" className="w-full h-auto" />
@@ -48,7 +53,7 @@ const About: React.FC = () => {
     </div>
 
     {/* Mission Section */}
-    <div className="flex flex-col md:flex-row-reverse items-center my-12">
+    <div className="flex flex-col container mx-auto md:flex-row-reverse items-center my-12">
       <div className="md:w-1/2">
         <img src={missionImage} alt="Mission" className="w-full h-auto" />
       </div>
@@ -59,8 +64,8 @@ const About: React.FC = () => {
             A core aspect of our mission is championing women and youth in tech, ensuring a future where everyone has the opportunity to excel in this ever-growing field.</p>
       </div>
     </div>
-    <div className="my-12">
-      <h2 className="text-4xl font-bold text-center mb-8">Why Cyber Eyes Networks?</h2>
+    <div className="my-20 container mx-auto">
+      <h2 className="text-4xl font-bold  text-center mb-8">Why Cyber Eyes Networks?</h2>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
         <div className="flex">
           <img src={provenImpactImage} alt="Proven Impact" className="w-1/2 object-cover" />
@@ -93,7 +98,7 @@ const About: React.FC = () => {
       </div>
     </div>
      {/* Meet Our Team Section */}
-     <div className="my-12">
+     <div className="my-10 container mx-auto">
         <h2 className="text-3xl font-bold text-center mb-8">Meet Our Team</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {/* Team Member 1 */}
