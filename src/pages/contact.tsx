@@ -14,7 +14,7 @@ export default function Contact() {
                         <img
                             alt="Contact us"
                             className="lg:max-h-full sm: sm:block w-full rounded-lg object-cover lg:block"
-                            src="./src/assets/contact.png"
+                            src="/images/contact.png"
                         />
                         <div className="flex items-center justify-center">
                             <div className="px-2 md:px-12">
