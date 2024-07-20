@@ -50,15 +50,12 @@ export const Header: React.FC = () => {
             <NavLink to="/about-us" className="text-yellow-500 hover:text-white px-3 py-2">
               About Us
             </NavLink>
-            <NavLink to="CTF Platform" className="text-yellow-500 hover:text-white px-3 py-2">
+            <NavLink to="/CTFPlatform" className="text-yellow-500 hover:text-white px-3 py-2">
               CTF Platform
             </NavLink>
             <NavLink to="/cyber-security" className="text-yellow-500 hover:text-white px-3 py-2">
               Cyber Security
             </NavLink>
-            {/* <NavLink to="/cyber-security" className="text-yellow-500 hover:text-white px-3 py-2">
-           Networking
-            </NavLink> */}
             <NavLink to="/software-engineering" className="text-yellow-500 hover:text-white px-3 py-2">
               Software Engineering
             </NavLink>
@@ -66,7 +63,7 @@ export const Header: React.FC = () => {
               News Hub
             </NavLink>
             <NavLink to="/materials" className="text-yellow-500 hover:text-white px-3 py-2">
-              Reading Materials
+              Academy
             </NavLink>
             <NavLink to="/contact" className="text-yellow-500 hover:text-white px-3 py-2">
               <button className="bg-yellow-500 hover:bg-yellow-600 text-white lg:font-bold py-2 px-4 rounded">
