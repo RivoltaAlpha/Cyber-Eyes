@@ -1,5 +1,5 @@
 import React from 'react';
-import signUpImage from '../assets/subscribe.png'; 
+import signUpImage from '/images/subscribe.png'; 
 
 const FooterSignUp: React.FC = () => {
   return (
