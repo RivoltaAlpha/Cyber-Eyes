@@ -10,9 +10,9 @@ import FooterSignUp from './pages/signup';
 import About from './pages/about-us';
 import CybersecurityPage from './pages/cyberSec';
 import SoftwareEng from './pages/software-eng';
-import ArticlePage from './pages/articlePage';
-import CTFPlatform from './pages/ctfPage';
 import NewsHub from './pages/newsHub';
+import CTFPlatform from './pages/ctfPage';
+// import ArticlePage from './pages/articlePage';
 // import AdminDashboard from './pages/admin_dashboard';
 // import Error from './pages/error';
 // import Materials from './pages/materials';
@@ -34,8 +34,8 @@ const App: React.FC = () => {
             <Route path="/CTFPlatform" element={<CTFPlatform />} />
             <Route path="/cyber-security" element={<CybersecurityPage />} />
             <Route path="/software-engineering" element={<SoftwareEng />} />
-            <Route path="/articles" element={<ArticlePage />} />
             <Route path="/newsHub" element={<NewsHub />} />
+            {/* <Route path="/articles" element={<ArticlePage />} /> */}
             {/* <Route path="/admin-dashboard" element={<AdminDashboard />} />
             <Route path="/materials" element={<Materials />} />
             <Route path="/user-dashboard" element={<UserDashboard />} />

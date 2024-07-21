@@ -12,7 +12,7 @@ const ProgramCard: React.FC<ProgramCardProps> = ({ title, description, imageUrl,
     <div className="bg-white shadow-lg rounded-lg overflow-hidden transition duration-300 ease-in-out transform hover:scale-105">
       <div className="md:flex">
         <div className="md:flex-shrink-0">
-          <img className="h-60 w-[300px] object-cover md-w-full" src={imageUrl} alt={title} />
+          <img className="w-[500px] object-cover md-w-full" src={imageUrl} alt={title} />
         </div>
         <div className="p-8">
           <h2 className="text-2xl font-bold mb-2">{title}</h2>
